@@ -1,11 +1,19 @@
 import magic
+
 from hashlib import md5
+
 from datetime import datetime
+
 import boto3
+
 from botocore.exceptions import ClientError
+
 import logging
+
 import datetime
+
 from os import getenv
+
 from dotenv import load_dotenv
 
 load_dotenv()

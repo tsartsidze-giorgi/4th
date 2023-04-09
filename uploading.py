@@ -3,37 +3,6 @@ import argparse
 
 parser = argparse.ArgumentParser(
     description="CLI program that helps with uploading files on S3 buckets.",
-    usage='''
-    How to upload file:
-    short:
-        python week4_hw1.py -up -bn <bucket_name> -fn <file_path> 
-    long:
-       python week4_hw1.py --upload_file --bucket_name <bucket_name> --file_name <file_path>
-
-    How to list buckets:
-    short:
-        python week4_hw1.py -lb
-    long:
-        python week4_hw1.py --list_buckets
-    
-    How to set versioning to a bucket:
-    short:
-         python week4_hw1.py -bn <bucket_name> -vers <Bool>
-    long:
-        python week4_hw1.py --bucket_name <bucket_name> --versioning <Bool>
-        
-    How to check objects version:
-    short:
-        python week4_hw1.py -bucket_name <bucket_name> -l_v -fn <file_path>
-    long:
-        python week4_hw1.py -bucket_name <bucket_name> -list_versions --file_name <file_path>
-        
-    How to delete old version of object:
-    short:
-        python week4_hw1.py -bn <bucket_name> -d_o_o_v
-    long:
-        python week4_hw1.py --bucket_name <bucket_name> --delete_old_objects_version  
-    ''',
     prog='week4_hw1.py',
     epilog='hw1 and hw2')
 
